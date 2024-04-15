@@ -1,0 +1,121 @@
+   <link rel="stylesheet" href="assets/css/style-starter.css">
+ 
+ <header style="background-color: black;z-index: 100;position: sticky;top: 0;box-shadow: 0 4px 2px -2px rgba(0,0,0,.1);" id="site-header" class="fixed-top">
+    <section class="w3l-header-4">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <h1> <a class="navbar-brand" href="index.html">
+              Pet<span class="sublog">spatial.</span>
+            </a></h1>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa icon-expand fa-bars"></span>
+            <span class="fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              {{#if user}}
+              <li style="margin-left: 750px;" class="nav-item active">
+                <button ondblclick="location='/logout'" class="nav-link btn btn-danger" href="/">{{user.name}} </button>
+              </li>
+              {{/if}}
+              
+            </ul>
+
+            <!-- //toggle switch for light and dark theme -->
+            <!-- search popup -->
+            <div id="search" class="pop-overlay">
+              <div class="popup">
+                <form action="#" method="GET" class="d-sm-flex">
+                  <input type="search" placeholder="Search.." name="search" required="required" autofocus>
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                  <a class="close" href="#">&times;</a>
+                </form>
+              </div>
+            </div>
+            <!-- /search popup -->
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <!--//header-->
+  <!-- main-slider -->
+  <section class="w3l-main-slider banner-slider" id="home">
+    <div class="owl-one owl-carousel owl-theme">
+      <div class="item">
+        <div class="slider-info banner-view banner-top1">
+          <div class="container">
+            <div class="banner-info">
+              <h3>Grooming & Pet Supplies.</h3>
+              <div class="banner-info-top">
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                  tempufddfel. Lorem ipsum dolor sit amet elit. </p>
+
+
+              </div>
+            </div>
+            <div class="banner-info-top-grids">
+              <h5 class="text-lg-left"><strong>Our Location : </strong> 253 Adams Ave, Iowa</h5>
+              <h5 class="text-lg-right"><strong> Open Hours : </strong> Mon - Sat 8am - 6pm</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="slider-info banner-view banner-top2">
+          <div class="container">
+            <div class="banner-info">
+              <h3>Caring is More Daring.</h3>
+              <div class="banner-info-top">
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                  tempufddfel. Lorem ipsum dolor sit amet elit. </p>
+             
+
+              </div>
+            </div>
+            <div class="banner-info-top-grids">
+              <h5 class="text-lg-left"><strong>Our Location : </strong> 253 Adams Ave, Iowa</h5>
+              <h5 class="text-lg-right"><strong> Open Hours : </strong> Mon - Sat 8am - 6pm</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="slider-info banner-view banner-top3">
+          <div class="container">
+            <div class="banner-info">
+              <h3>Grooming & Pet Supplies.</h3>
+              <div class="banner-info-top">
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                  tempufddfel. Lorem ipsum dolor sit amet elit. </p>
+      
+              </div>
+            </div>
+            <div class="banner-info-top-grids">
+              <h5 class="text-lg-left"><strong>Our Location : </strong> 253 Adams Ave, Iowa</h5>
+              <h5 class="text-lg-right"><strong> Open Hours : </strong> Mon - Sat 8am - 6pm</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
