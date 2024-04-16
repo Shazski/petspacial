@@ -1,3 +1,4 @@
+
 <div class="formbold-main-wrapper">
   <!-- Author: FormBold Team -->
   <!-- Learn More: https://formbold.com -->
@@ -67,8 +68,9 @@
             <input
               type="date"
               name="date"
-              id="date"
+              id="datepicker"
               class="formbold-form-input"
+              min="<?php echo date('Y-m-d'); ?>"
 			  required
             />
           </div>
@@ -249,3 +251,12 @@
     }
   }
 </style>
+
+<script>
+  // Get the date input element
+  const dateInput = document.getElementById('datepicker');
+
+  // Set the minimum date to the current date
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.min = today;
+</script> 

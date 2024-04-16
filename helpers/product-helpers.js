@@ -107,7 +107,7 @@ module.exports ={
             from: 'ecommerce1419@gmail.com',
             to: collegeEmail,
             subject: 'College registration Approval',
-            text: 'Your college is approved by admin! Now you can login"'
+            text: 'Your Hospital is approved by admin! Now you can login"'
           };
           
           transporter.sendMail(mailOptions, function(error, info){
